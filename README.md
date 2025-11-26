@@ -1,8 +1,5 @@
 # twin.ai
 
-Here is a clean, professional README for **Twin**, written in a modern GitHub style, with a clear AISL focus, balanced length, and no emojis.
-
----
 
 # Twin: The Personal Cognitive Mirror
 
@@ -110,13 +107,3 @@ Ongoing work includes deeper reasoning, dynamic preference learning, and extende
 
 This project is proprietary.
 All rights reserved.
-
----
-
-If you want, I can also generate:
-
-* A shorter landing-page-style README
-* A technical whitepaper-style README
-* A diagram version for GitHub README
-
-Just tell me.
