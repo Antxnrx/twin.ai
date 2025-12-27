@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light Mode - Off-white, warm, calm */
+    --background: 210 20% 98%;
+    --foreground: 220 25% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 10%;
+
+    --primary: 205 65% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 15% 94%;
+    --secondary-foreground: 220 25% 20%;
+
+    --muted: 210 15% 92%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 205 65% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 15% 88%;
+    --input: 210 15% 92%;
+    --ring: 205 65% 45%;
+
+    --radius: 1rem;
+
+    /* Twin specific */
+    --message-user: 205 65% 45%;
+    --message-user-foreground: 0 0% 100%;
+    --message-ai: 210 15% 96%;
+    --message-ai-foreground: 220 25% 15%;
+    --status-dot: 150 60% 50%;
+    --floating-bar: 0 0% 100%;
+    --floating-bar-foreground: 220 25% 10%;
+    --input-bar: 0 0% 100%;
+  }
+
+  .dark {
+    /* Dark Mode - Near-black, subtle, focused */
+    --background: 220 20% 8%;
+    --foreground: 210 15% 92%;
+
+    --card: 220 20% 12%;
+    --card-foreground: 210 15% 92%;
+
+    --popover: 220 20% 12%;
+    --popover-foreground: 210 15% 92%;
+
+    --primary: 205 60% 55%;
+    --primary-foreground: 220 20% 8%;
+
+    --secondary: 220 20% 16%;
+    --secondary-foreground: 210 15% 85%;
+
+    --muted: 220 20% 18%;
+    --muted-foreground: 210 10% 55%;
+
+    --accent: 205 60% 55%;
+    --accent-foreground: 220 20% 8%;
+
+    --destructive: 0 55% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 18%;
+    --ring: 205 60% 55%;
+
+    /* Twin specific */
+    --message-user: 205 60% 50%;
+    --message-user-foreground: 0 0% 100%;
+    --message-ai: 220 20% 15%;
+    --message-ai-foreground: 210 15% 90%;
+    --status-dot: 150 55% 45%;
+    --floating-bar: 220 20% 14%;
+    --floating-bar-foreground: 210 15% 92%;
+    --input-bar: 220 20% 14%;
+  }
+
+  .midnight {
+    /* Midnight Mode - Deep navy, serene, contemplative */
+    --background: 220 45% 8%;
+    --foreground: 210 30% 88%;
+
+    --card: 220 40% 12%;
+    --card-foreground: 210 30% 88%;
+
+    --popover: 220 40% 12%;
+    --popover-foreground: 210 30% 88%;
+
+    --primary: 205 50% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 40% 16%;
+    --secondary-foreground: 210 25% 80%;
+
+    --muted: 220 40% 18%;
+    --muted-foreground: 210 20% 55%;
+
+    --accent: 205 50% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 50% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 35% 20%;
+    --input: 220 40% 18%;
+    --ring: 205 50% 55%;
+
+    /* Twin specific */
+    --message-user: 205 50% 50%;
+    --message-user-foreground: 0 0% 100%;
+    --message-ai: 220 40% 14%;
+    --message-ai-foreground: 210 25% 85%;
+    --status-dot: 180 45% 50%;
+    --floating-bar: 220 40% 13%;
+    --floating-bar-foreground: 210 30% 88%;
+    --input-bar: 220 40% 13%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: 'ss01' on, 'ss02' on;
+  }
+}
+
+@layer utilities {
+  .transition-theme {
+    @apply transition-colors duration-200 ease-out;
+  }
+}
